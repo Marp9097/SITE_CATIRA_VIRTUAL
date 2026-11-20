@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Loja</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:ital,wght@0,700;0,800;0,900;1,800;1,900&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/store.css">
+</head>
+<body class="store">
+  <div class="topbar" id="topbar" hidden></div>
+
+  <header class="site-header">
+    <div class="wrap">
+      <button class="hbtn menu-btn" id="menuBtn" aria-label="Menu"></button>
+      <a href="#/" class="logo" id="logo"></a>
+      <nav class="mainnav" id="mainnav"></nav>
+      <form class="hsearch" id="hsearch" autocomplete="off">
+        <input id="q" type="search" placeholder="O que você procura?" aria-label="Buscar">
+        <button type="submit" aria-label="Buscar" id="qBtn"></button>
+        <div class="suggest" id="suggest" hidden></div>
+      </form>
+      <div class="hicons">
+        <a href="#/pedidos" class="hbtn hide-sm" title="Meus pedidos" id="hUser"></a>
+        <a href="#/favoritos" class="hbtn" title="Favoritos" id="hFav"></a>
+        <a href="#/carrinho" class="hbtn" title="Carrinho" id="hCart"></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="view" class="view"></main>
+
+  <footer class="foot2" id="foot"></footer>
+
+  <aside class="mnav" id="mnav"></aside>
+  <div class="overlay" id="overlay"></div>
+  <div class="lightbox" id="lightbox"></div>
+  <a class="wfab" id="wfab" hidden target="_blank" rel="noopener" aria-label="WhatsApp"></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/icons.js"></script>
+  <script src="js/store.js"></script>
+</body>
+</html>
